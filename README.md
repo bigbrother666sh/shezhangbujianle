@@ -14,6 +14,5 @@
 
 
 剧情中谭明策划了一个阴谋，并私下与蔡晓达成联盟，但是他不知道蔡晓还有更大的阴谋，而蔡晓同意跟他联盟也只不过想利用他而已……我们为AI制定的针对谭明的策略就是虚以委蛇、煽风点火。实际表现中，AI很好的贯彻了这个思路，甚至发挥想象力的使用了色诱绝技……坦率的讲，这招也极大的超出了我们的预料……
-
-
+![img]https://github.com/WukongZeming/shezhangbujianle/blob/main/assets/vstanming.gif
 
