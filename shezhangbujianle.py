@@ -16,14 +16,14 @@ from wechaty import (
     # Room,
 )
 
-set_yuan_account("zeming_zhao", "13788933179")
+set_yuan_account("", "")  #填入对应的浪潮源1.0API账号,申请地址：https://air.inspur.com/home
 
 # check1 = hub.Module(name="porn_detection_lstm")  #色情检测模型
 check = hub.Module(name="ernie-csc")  # 错别字、病句自动更正模型
 simnet_bow = hub.Module(name="simnet_bow")
 
-director = 'wxid_a6xxa7n11u5j22'
-with open('users.json') as f:
+director = 'wxid_a6xxa7n11u5j22'  #替换为导演的uuid
+with open('users.json') as f:       #需要有一个初始的文件，可以用本项目提供的，第一轮游戏全部用户注册后，导演发指令存储下
     users = json.load(f)
 
 talker_dict = {}
@@ -259,3 +259,26 @@ async def main():
 
 
 asyncio.run(main())
+
+
+"""
+Authors:bigbrother666sh
+On the basis of the following open source projects：
+Yuan 1.0 Large pretrained LM - https://github.com/Shawn-Inspur/Yuan-1.0
+Python Wechaty - https://github.com/wechaty/python-wechaty
+PaddlePaddle - PaddlePaddle
+
+editors: Qingling Li, Jingwei Hu, Jianing Zhao, Yang Ding
+director:bigbrother666sh
+       
+2022 @ Copyright Projets Contributors
+Licensed under the Apache License, Version 2.0 (the 'License');
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an 'AS IS' BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+"""
