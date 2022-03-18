@@ -266,7 +266,7 @@ Authors:bigbrother666sh
 On the basis of the following open source projects：
 Yuan 1.0 Large pretrained LM - https://github.com/Shawn-Inspur/Yuan-1.0
 Python Wechaty - https://github.com/wechaty/python-wechaty
-PaddlePaddle - PaddlePaddle
+PaddlePaddle - https://github.com/PaddlePaddle
 
 editors: Qingling Li, Jingwei Hu, Jianing Zhao, Yang Ding
 director:bigbrother666sh
