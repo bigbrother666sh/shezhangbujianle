@@ -16,7 +16,7 @@ from wechaty import (
     #Room,
 )
 
-set_yuan_account("zeming_zhao", "13788933179")
+set_yuan_account("", "") #这里填入你自己的浪潮源API账号，申请地址https://air.inspur.com/home
 
 # check1 = hub.Module(name="porn_detection_lstm")  #色情检测模型
 # check = hub.Module(name="ernie-csc")  # 错别字、病句自动更正模型
