@@ -73,10 +73,10 @@ def soul(text, a,b):
     # print(results)
     yuan.add_example(
         Example(inp=who+"说：“"+results[0]['text_1']+"”", out=lines[lines.index(results[0]['text_1'] + '\n') + 1].strip('\n')))
-    if results[1]['similarity'] > 0.5:
+    if results[1]['similarity'] > 0.75:
         yuan.add_example(
             Example(inp=who+"说：“"+results[1]['text_1']+"”", out=lines[lines.index(results[1]['text_1'] + '\n') + 1].strip('\n')))
-    if results[2]['similarity'] > 0.5:
+    if results[2]['similarity'] > 0.75:
         yuan.add_example(
             Example(inp=who+"说：“"+results[2]['text_1']+"”", out=lines[lines.index(results[2]['text_1'] + '\n') + 1].strip('\n')))
     time.sleep(1)
@@ -188,7 +188,7 @@ async def on_message(msg: Message):
             print("tanming called privately, reply generating...")
             text = re.sub(r'\s', "，", msg.text())
             text = text.replace("#", "，")
-            if len(memory["tm"]) > 3:
+            if len(memory["tm"]) > 2:
                 memory["tm"].pop(0)
             memory["tm"].append("谭明说：“"+text+"”")
             reply = soul(text, 0, "tm")
@@ -218,7 +218,7 @@ async def on_message(msg: Message):
             print("kongmo called privately, reply generating...")
             text = re.sub(r'\s', "，",msg.text())
             text = text.replace("#", "，")
-            if len(memory["km"]) > 3:
+            if len(memory["km"]) > 2:
                 memory["km"].pop(0)
             memory["km"].append("孔墨说：“"+text+"”")
             reply = soul(text, 1, "km")
@@ -247,7 +247,7 @@ async def on_message(msg: Message):
             print("lichao called privately, reply generating...")
             text = re.sub(r'\s', "，",msg.text())
             text = text.replace("#", "，")
-            if len(memory["lc"]) > 3:
+            if len(memory["lc"]) > 2:
                 memory["lc"].pop(0)
             memory["lc"].append("李超说：“"+text+"”")
             reply = soul(text, 2, "lc")
@@ -277,7 +277,7 @@ async def on_message(msg: Message):
             print("sunruo called privately, reply generating...")
             text = re.sub(r'\s', "，",msg.text())
             text = text.replace("#", "，")
-            if len(memory["sr"]) > 3:
+            if len(memory["sr"]) > 2:
                 memory["sr"].pop(0)
             memory["sr"].append("孙若说：“"+text+"”")
             reply = soul(text, 3, "sr")
