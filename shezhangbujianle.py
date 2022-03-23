@@ -325,7 +325,7 @@ Yuan1.0 API - https://github.com/Shawn-Inspur/Yuan-1.0
 Paddlehub - https://github.com/PaddlePaddle/PaddleHub
     
 Author:    bigbrother666  <https://github.com/bigbrother666sh>
-2020 @ Copyright Wechaty Contributors <https://github.com/wechaty>
+2022 @ Copyright Wechaty Contributors <https://github.com/wechaty>
 Licensed under the Apache License, Version 2.0 (the 'License');
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
