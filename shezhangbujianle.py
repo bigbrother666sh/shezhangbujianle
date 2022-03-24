@@ -173,7 +173,7 @@ async def on_message(msg: Message):
                 memory[msg.room().room_id]=[]
             #if len(re.sub(r'\s', "",re.sub(r'@.+?\s', "", msg.text())))==0:
             text = re.sub(r'\s', "，",msg.text())
-            text = text.replace("@", "").replace("#", "")
+            text = text.replace("@", "").replace("#", "%23")
             if len(memory[msg.room().room_id]) > 5:
                 memory[msg.room().room_id].pop(0)
             memory[msg.room().room_id].append("谭明说：“"+text+"”")
@@ -187,7 +187,7 @@ async def on_message(msg: Message):
         else:
             print("tanming called privately, reply generating...")
             text = re.sub(r'\s', "，", msg.text())
-            text = text.replace("#", "，")
+            text = text.replace("#", "%23")
             if len(memory["tm"]) > 2:
                 memory["tm"].pop(0)
             memory["tm"].append("谭明说：“"+text+"”")
@@ -203,7 +203,7 @@ async def on_message(msg: Message):
                 rooms.append(msg.room().room_id)
                 memory[msg.room().room_id]=[]
             text = re.sub(r'\s', "，", msg.text())
-            text = text.replace("@", "").replace("#", "")
+            text = text.replace("@", "").replace("#", "%23")
             if len(memory[msg.room().room_id]) > 5:
                 memory[msg.room().room_id].pop(0)
             memory[msg.room().room_id].append("孔墨说：“"+text+"”")
@@ -217,7 +217,7 @@ async def on_message(msg: Message):
         else:
             print("kongmo called privately, reply generating...")
             text = re.sub(r'\s', "，",msg.text())
-            text = text.replace("#", "，")
+            text = text.replace("#", "%23")
             if len(memory["km"]) > 2:
                 memory["km"].pop(0)
             memory["km"].append("孔墨说：“"+text+"”")
@@ -232,7 +232,7 @@ async def on_message(msg: Message):
                 rooms.append(msg.room().room_id)
                 memory[msg.room().room_id]=[]
             text = re.sub(r'\s', "，", msg.text())
-            text = text.replace("@", "").replace("#", "")
+            text = text.replace("@", "").replace("#", "%23")
             if len(memory[msg.room().room_id]) > 5:
                 memory[msg.room().room_id].pop(0)
             memory[msg.room().room_id].append("李超说：“"+text+"”")
@@ -246,7 +246,7 @@ async def on_message(msg: Message):
         else:
             print("lichao called privately, reply generating...")
             text = re.sub(r'\s', "，",msg.text())
-            text = text.replace("#", "，")
+            text = text.replace("#", "%23")
             if len(memory["lc"]) > 2:
                 memory["lc"].pop(0)
             memory["lc"].append("李超说：“"+text+"”")
@@ -262,7 +262,7 @@ async def on_message(msg: Message):
                 rooms.append(msg.room().room_id)
                 memory[msg.room().room_id]=[]
             text = re.sub(r'\s', "，", msg.text())
-            text = text.replace("@", "").replace("#", "")
+            text = text.replace("@", "").replace("#", "%23")
             if len(memory[msg.room().room_id]) > 5:
                 memory[msg.room().room_id].pop(0)
             memory[msg.room().room_id].append("孙若说：“"+text+"”")
@@ -276,7 +276,7 @@ async def on_message(msg: Message):
         else:
             print("sunruo called privately, reply generating...")
             text = re.sub(r'\s', "，",msg.text())
-            text = text.replace("#", "，")
+            text = text.replace("#", "%23")
             if len(memory["sr"]) > 2:
                 memory["sr"].pop(0)
             memory["sr"].append("孙若说：“"+text+"”")
