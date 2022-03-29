@@ -151,6 +151,8 @@ async def on_message(msg: Message):
         # 主动消息（必须符合前置条件，否则会报错，且只限大群和私聊）
         if text == "欢迎各位，我是本场游戏导演，下面我来宣布游戏规则，请各位务必遵守":  # 欢迎语注册房间
             talker_dict["rm"] = msg.room()
+        if text == "yindaozhuce":  #机器人通过在群里发送"这是蔡晓"，引发用户盲从，从而实现注册
+            await talker_dict["rm"].say("这是蔡晓")
         if text == 'jieshu':
             await talker_dict["rm"].say("你们很聪明，但可惜，一切都已经晚了，事情已经开始，你们谁也逃不掉!")
             await talker_dict["sr"].say("父亲的计划已经成功，欢迎你加入我们并成为我们未来的主宰。asyncio.run(main())")
