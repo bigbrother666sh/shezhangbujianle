@@ -21,27 +21,27 @@
 剧情中谭明为了实现自己的目的，不择手段的策划了一个诡计，并计划私下与蔡晓达成联盟，然而他不知道的是蔡晓其实在下一盘更大的棋，正想借他的诡计实现自己的阴谋……所以AI对谭明的策略就是可劲儿的忽悠他并想方设法利用他。
 实际表现中，AI很好的贯彻了这个思路，甚至发挥想象力的使用了色诱绝技……坦率的讲，这招也极大的超出了我们的预料……
 
-<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vstanming.gif" width="960"/>
+<img alt="img" height="500" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vstanming.gif" width="960"/>
 
 ### 孔墨VS蔡晓（AI）
 
 剧情中孔墨的任务是调查真相，这个角色的玩家需要主动出击找其他玩家尽可能多了解情况，但有的时候会碰到比较内向的玩家。这种情况下我们会利用"导演机制"先主动发起一轮对话，
 可以看到AI在这种情况下能够很好的在后续轮次中进行线索"暗示"，起到推动剧情的作用。
 
-<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vstkongmo.gif" width="960"/>
+<img alt="img" height="500" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vstkomgmo.gif" width="960"/>
 
 ### 李超VS蔡晓（AI）
 
 剧情中的李超跟AI所扮演的蔡晓持有完全相反的立场，所以蔡晓需要说服李超，同时在一些事情上对其进行隐瞒……
 
-<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vslichao.gif" width="960"/>
+<img alt="img" height="500" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vslichao.gif" width="960"/>
 
 ### 孙若VS蔡晓（AI）
 
 剧情中孙若是一个比较复杂的角色，他（她，这个角色不限定性别）其实也跟蔡晓一样被改造为了"AI人"，但是他（她）自己却并不知道，并且延伸剧情的谜底也在这个人物身上。所以AI与孙若之间的对话需要体现一定的"深度"，不能不说，但也不能全说。
 最终效果如何，大家自己看吧~
 
-<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vssunruo.gif" width="960"/>
+<img alt="img" height="500" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vssunruo.gif" width="960"/>
 
 ### 蔡晓（AI）在公聊（房间）
 
@@ -227,5 +227,7 @@ wechaty操控微信是通过所谓的“wechaty-puppet”实现的，wechaty社�
 而这种良性的比拼和竞争也必将对中文NLP大模型的发展有所裨益。
 
 蔡晓和"北极鹅"的故事并未完结，让我们在这里最后上一张蔡晓的"北极鹅"工卡吧！
-<img alt="img" height="710" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/WechatIMG69.jpeg" width="960"/>
+
+<img alt="img" height="490" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/WechatIMG69.jpeg" width="672"/>
+
 （作为一个喜欢将细节拉满的团队，这张工卡里面其实隐藏着两个彩蛋，你能找到么？）
