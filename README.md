@@ -9,7 +9,7 @@
 
 本着细节拉满的原则，编导组精心策划了这个账号的昵称、头像，甚至每场游戏前我们还会紧扣时事的为它准备近三天的朋友圈内容，而游戏后还会继续连发三天朋友圈内容提供延展剧情（非常类似"规则怪谈"）。
 
-<img alt="img" height="600" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/af65z-209za.jpeg" width="300"/> <img alt="img" height="600" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/af65z-209za.jpeg" width="300"/>
+<img alt="img" height="600" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/af65z-209za.jpeg" width="300"/>   <img alt="img" height="600" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/af65z-209za.jpeg" width="300"/>
 
 整体剧情并不复杂，讲的是某高校社团中五个骨干成员因为一件事情牵涉到各自利益而产生的种种勾心斗角。玩家要做的也非常简单，就是想方设法、拉帮结派的说服其他人接受自己的主张……不过我们这次对原作做了比较大的改动，剧作中AI所扮演的角色（蔡晓）受控于某邪恶的科技巨头（“北极鹅”公司），
 她要帮助“北极鹅”实行一个庞大的阴谋，而这个阴谋其实笼罩了所有人……坦率的说，从游戏角度，这个角色的难度还挺高，承担着推动剧情的作用，并且游戏机制设定最后所有的疑点矛头都会指向她，如果在现实的剧本杀游戏中，这个角色也应该是由DM扮演，而非普通玩家，当然这也就大大增加了对AI的考验。
@@ -21,15 +21,33 @@
 剧情中谭明为了实现自己的目的，不择手段的策划了一个诡计，并计划私下与蔡晓达成联盟，然而他不知道的是蔡晓其实在下一盘更大的棋，正想借他的诡计实现自己的阴谋……所以AI对谭明的策略就是可劲儿的忽悠他并想方设法利用他。
 实际表现中，AI很好的贯彻了这个思路，甚至发挥想象力的使用了色诱绝技……坦率的讲，这招也极大的超出了我们的预料……
 
-![img](https://github.com/WukongZeming/shezhangbujianle/blob/main/assets/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B62022-03-13%2014.48.44.gif)
+<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vstanming.gif" width="960"/>
 
 ### 孔墨VS蔡晓（AI）
 
+剧情中孔墨的任务是调查真相，这个角色的玩家需要主动出击找其他玩家尽可能多了解情况，但有的时候会碰到比较内向的玩家。这种情况下我们会利用"导演机制"先主动发起一轮对话，
+可以看到AI在这种情况下能够很好的在后续轮次中进行线索"暗示"，起到推动剧情的作用。
+
+<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vskongmo.gif" width="960"/>
+
 ### 李超VS蔡晓（AI）
+
+剧情中的李超跟AI所扮演的蔡晓持有完全相反的立场，所以蔡晓需要说服李超，同时在一些事情上对其进行隐瞒……
+
+<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vslichao.gif" width="960"/>
 
 ### 孙若VS蔡晓（AI）
 
+剧情中孙若是一个比较复杂的角色，他（她，这个角色不限定性别）其实也跟蔡晓一样被改造为了"AI人"，但是他（她）自己却并不知道，并且延伸剧情的谜底也在这个人物身上。所以AI与孙若之间的对话需要体现一定的"深度"，不能不说，但也不能全说。
+最终效果如何，大家自己看吧~
+
+<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vssunruo.gif" width="960"/>
+
 ### 蔡晓（AI）在公聊（房间）
+
+最后放一段编导组内测的群聊画面，大家再整体感受下。:smile:
+
+<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vssunruo.gif" width="960"/>
 
 # 核心功能——“目的性对话”端到端生成方案
 
