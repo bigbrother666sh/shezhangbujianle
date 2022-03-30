@@ -227,5 +227,5 @@ wechaty操控微信是通过所谓的“wechaty-puppet”实现的，wechaty社�
 而这种良性的比拼和竞争也必将对中文NLP大模型的发展有所裨益。
 
 蔡晓和"北极鹅"的故事并未完结，让我们在这里最后上一张蔡晓的"北极鹅"工卡吧！
-<img alt="img" height="720" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/WechatIMG69.jpeg" width="960"/>
+<img alt="img" height="710" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/WechatIMG69.jpeg" width="960"/>
 （作为一个喜欢将细节拉满的团队，这张工卡里面其实隐藏着两个彩蛋，你能找到么？）
