@@ -45,9 +45,11 @@
 
 ### 蔡晓（AI）在公聊（房间）
 
-最后放一段编导组内测的群聊画面，大家再整体感受下。:smile:
+最后放一段编导组与AI的毕业群聊画面，大家再整体感受下。:smile:
 
 <img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vssunruo.gif" width="960"/>
+
+从剧情角度,AI对孙若的最后一句话充满了深意……当然，从技术角度，我更相信这只是巧合，然而这恰是本作好玩的地方之一——AI的不确定性会极大丰富原有剧情。
 
 # 核心功能——“目的性对话”端到端生成方案
 
