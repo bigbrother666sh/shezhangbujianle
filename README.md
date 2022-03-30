@@ -21,33 +21,33 @@
 剧情中谭明为了实现自己的目的，不择手段的策划了一个诡计，并计划私下与蔡晓达成联盟，然而他不知道的是蔡晓其实在下一盘更大的棋，正想借他的诡计实现自己的阴谋……所以AI对谭明的策略就是可劲儿的忽悠他并想方设法利用他。
 实际表现中，AI很好的贯彻了这个思路，甚至发挥想象力的使用了色诱绝技……坦率的讲，这招也极大的超出了我们的预料……
 
-<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vstanming.gif" width="960"/>
+<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vstanming.gif" width="960"/>
 
 ### 孔墨VS蔡晓（AI）
 
 剧情中孔墨的任务是调查真相，这个角色的玩家需要主动出击找其他玩家尽可能多了解情况，但有的时候会碰到比较内向的玩家。这种情况下我们会利用"导演机制"先主动发起一轮对话，
 可以看到AI在这种情况下能够很好的在后续轮次中进行线索"暗示"，起到推动剧情的作用。
 
-<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vskongmo.gif" width="960"/>
+<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vstkongmo.gif" width="960"/>
 
 ### 李超VS蔡晓（AI）
 
 剧情中的李超跟AI所扮演的蔡晓持有完全相反的立场，所以蔡晓需要说服李超，同时在一些事情上对其进行隐瞒……
 
-<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vslichao.gif" width="960"/>
+<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vslichao.gif" width="960"/>
 
 ### 孙若VS蔡晓（AI）
 
 剧情中孙若是一个比较复杂的角色，他（她，这个角色不限定性别）其实也跟蔡晓一样被改造为了"AI人"，但是他（她）自己却并不知道，并且延伸剧情的谜底也在这个人物身上。所以AI与孙若之间的对话需要体现一定的"深度"，不能不说，但也不能全说。
 最终效果如何，大家自己看吧~
 
-<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vssunruo.gif" width="960"/>
+<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vssunruo.gif" width="960"/>
 
 ### 蔡晓（AI）在公聊（房间）
 
 最后放一段编导组与AI的毕业群聊画面，大家再整体感受下。:smile:
 
-<img alt="img" height="540" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/vssunruo.gif" width="960"/>
+<img alt="img" height="520" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/lastroom.gif" width="960"/>
 
 从剧情角度,AI对孙若的最后一句话充满了深意……当然，从技术角度，我更相信这只是巧合，然而这恰是本作好玩的地方之一——AI的不确定性会极大丰富原有剧情。
 
@@ -93,7 +93,7 @@ Model（LM），类似于openAI的GPT-3，但是与GPT-3不同，源1.0更加擅
 经过分析，我们认为造成这种情况的原因可能有二：1、前面若干轮次的用户对话，虽然我们本意是为AI提供更多生成依据，但是这也同时增加了干扰，使得example的few-short效果降低；2、如果AI前面自己回复的内容就不是特别靠谱的话，这个回复文本作为后续轮次的输入，又会放大偏差；
 事实上，对于这两个问题根本的解决方案是增加"注意力机制"，人类在日常生活中也不会记住所有事情、所有细节，没有遗忘的记忆其实等同于没有记忆，同理，***没有"注意力机制"的"记忆机制"其实对于对话AI来说是弊大于利的***。
 
-然而，如果要引入"注意力机制"，那就要增加更加复杂的NLU算法，整个项目的复杂度会提高一个数量级（因为还存在一个"需要注意哪些"的问题）。好在本项目的实际应用场景更多的还是关注当前轮次的对话，所以我们可以用一个简化的处理方案——**只记忆当前轮次和上一轮次的对话**。
+然而，如果要引入"注意力机制"，那就要增加更加复杂的NLU算法，整个项目的复杂度会提高一个数量级（因为还存在一个"需要注意哪些"的问题）。好在本项目的实际应用场景更多的还是关注当前轮次的对话，所以我们可以用一个极简化的处理方案——**只记忆当前轮次和上一轮次的对话**。
 而对于需要遥远轮次对话内容回答的情况，AI可以托言"忘记了"，这对于真人来说，也是比较正常的现象。 实际测试下来，这个方案的效果还是相当不错的。另外在这个过程中，我们也尝试过只让AI记忆用户对话，而不记忆自己的回复，发现效果非常差，这可能是因为这种不对称的记忆实在跟example差的太多。好在只记忆一轮对话的情况下，不靠谱结果的"放大效应"也并不明显。另外对于群聊对话，我们也尝试过把并非需要AI参与的对话也进行记忆
 ，比如角色A与角色B之间的撕逼，没有涉及AI，一开始我们的想法是一旦突然要把AI拉进来呢？是不是这个时候AI知道背景会好一些，但实践下来效果也不理想，我们猜想原因可能还是没有注意力机制的记忆机制其实记不了多少，反而增加了干扰项，比如前面A一直说不赞同，这个时候
 B拉AI进来，想让AI帮自己说话，而剧情设计此时AI也应该帮B说话，但是模型生成的时候，反而会被A反复的不赞同信息给带偏……
@@ -227,5 +227,5 @@ wechaty操控微信是通过所谓的“wechaty-puppet”实现的，wechaty社�
 而这种良性的比拼和竞争也必将对中文NLP大模型的发展有所裨益。
 
 蔡晓和"北极鹅"的故事并未完结，让我们在这里最后上一张蔡晓的"北极鹅"工卡吧！
-![img](https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/a5xrh-20blg.jpeg)
+<img alt="img" height="720" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/WechatIMG69.jpeg" width="960"/>
 （作为一个喜欢将细节拉满的团队，这张工卡里面其实隐藏着两个彩蛋，你能找到么？）
