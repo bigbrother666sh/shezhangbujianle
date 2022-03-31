@@ -1,13 +1,12 @@
 借助世界上最大的单体中文NLP大模型(浪潮 源1.0 https://air.inspur.com/home ），我们做出了一个可以跟人类玩“剧本杀”的AI……
 
-# 无图无真相
+# 核心创意与演示
 
 我们为本项目特别改编了一个微型线上剧本杀剧本，本子有五个角色，分别由五名玩家扮演，但我们每场只会召集四个玩家，并在他们不知情的情况下，派出AI扮演剩下的那个角色。
 
-为了尽量避免引起玩家怀疑，我们不想让用户额外下载APP或者登录一个网页。对于绝大部分中国用户而言，微信就是线上最自然的交流方式，也是“最真实”的交流方式，为此我们需要打造一个“微信虚拟人”，
-很幸运的，我们发现了wechaty这个神器（https://github.com/wechaty ）。
+玩家无需下载客户端或者打开网页，直接使用微信就能玩（感谢神器**Wechaty** https://github.com/wechaty）。
 
-本着细节拉满的原则，编导组精心策划了这个账号的昵称、头像，甚至每场游戏前我们还会紧扣时事的为它准备近三天的朋友圈内容，而游戏后还会继续连发三天朋友圈内容提供延展剧情（非常类似"规则怪谈"）。
+本着细节拉满的原则，我们也为AI准备了一个微信账号，并精心为她设定了昵称和头像，甚至每场游戏前我们还会紧扣时事的为她准备近三天的朋友圈内容，而游戏后还会继续连发三天朋友圈内容提供延展剧情（非常类似"规则怪谈"）。
 
 <img alt="img" height="600" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/af65z-209za.jpeg" width="300"/>   <img alt="img" height="600" src="https://github.com/bigbrother666sh/shezhangbujianle/blob/main/assets/af65z-209za.jpeg" width="300"/>
 
