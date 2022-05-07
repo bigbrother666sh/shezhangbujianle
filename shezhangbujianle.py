@@ -22,7 +22,7 @@ set_yuan_account("", "") #这里填入你自己的浪潮源API账号，申请地
 # check = hub.Module(name="ernie-csc")  # 错别字、病句自动更正模型
 simnet_bow = hub.Module(name="simnet_bow")
 
-director = 'wxid_a6xxa7n11u5j22'  #填入导演账号对于机器人帐号的微信UUID
+director = ["wxid_a6xxa7n11u5j22", "wxid_jm3c9ho6g11"]  #填入导演账号对于机器人帐号的微信UUID
 with open('users.json') as f:
     users = json.load(f)
 
@@ -130,7 +130,7 @@ async def on_message(msg: Message):
         await talker.say('这是蔡晓')
         return
 
-    if talker.contact_id == director:
+    if talker.contact_id in director:
         text = msg.text()
         if text[:2] == 'zc':
             if text[2:4] == 'tm':

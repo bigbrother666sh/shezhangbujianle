@@ -42,7 +42,7 @@ class Yuan:
     """
 
     def __init__(self, 
-                engine='',
+                engine='base_10B',
                 temperature=0.9,
                 max_tokens=100,
                 input_prefix='',
@@ -65,6 +65,9 @@ class Yuan:
         self.output_suffix = output_suffix
         self.append_output_prefix_to_query = append_output_prefix_to_query
         self.stop = (output_suffix + input_prefix).strip()
+
+        if self.engine not in ['base_10B','translate','dialog']:
+            raise Exception('engine must be one of [\'base_10B\',\'translate\',\'dialog\'] ')
 
     def add_example(self, ex):
         """Add an example to the object.
@@ -121,30 +124,47 @@ class Yuan:
                 query,
                 engine='',
                 max_tokens=20,
-                temperature=0.9,
-                topP=0.1,
-                topK=1):
+                temperature=0.3,
+                topP=0.9,
+                topK=7):
         """Obtains the original result returned by the API."""
 
         try:
-            requestId = submit_request(query,temperature,topP,topK,max_tokens)
+            requestId = submit_request(query,temperature,topP,topK,max_tokens, engine)
+            #print(requestId)
             response_text = reply_request(requestId)
         except Exception as e:
             raise e
         
         return response_text
-    
+
+
+    def del_special_chars(self, msg):
+        special_chars = ['<unk>', '<eod>', '#', '▃', '▁', '▂', '　']
+        for char in special_chars:
+            msg = msg.replace(char, '')
+        return msg
+
+
     def submit_API(self, prompt, trun='▃'):
         """Submit prompt to yuan API interface and obtain an pure text reply.
         :prompt: Question or any content a user may input.
         :return: pure text response."""
         query = self.craft_query(prompt)
+        #print(query)
         res = self.response(query,engine=self.engine,
                             max_tokens=self.max_tokens,
                             temperature=self.temperature,
                             topP=self.topP,
                             topK=self.topK)
         txt = res['resData']
+        # 单独针对翻译模型的后处理
+        if self.engine == 'translate':
+            txt = txt.replace(' ##', '').replace(' "', '"').replace(": ", ":").replace(" ,", ",") \
+                .replace('英文：', '').replace('文：', '').replace("( ", "(").replace(" )", ")")
+        else:
+            txt = txt.replace(' ', '')
+        txt = self.del_special_chars(txt)
         if trun:
             try:
                 txt = txt[:txt.index(trun)]
