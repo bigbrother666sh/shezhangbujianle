@@ -17,7 +17,7 @@ from wechaty import (
 )
 
 #这里填入你自己的浪潮源API账号，申请地址https://air.inspur.com/home
-set_yuan_account("zeming_zhao", "13788933179")
+set_yuan_account("", "")
 simnet_bow = hub.Module(name="simnet_bow")
 bad_detection = hub.Module(name="porn_detection_lstm")
 
